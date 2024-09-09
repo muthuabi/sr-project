@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+ * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* line-height: 1.6; */
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+header {
+    background:chocolate;
+    color: #fff;
+    padding: 1.6rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content:flex-end; /* Centers the navbar items */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #fce38a;
+}
+#menu{
+    position: relative;
+    /* vertical-align: top; */
+    background: url(menu.jpg);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover;  */
+}
+
+.menu{
+    justify-content:center;
+}
+.menu h2{
+   text-align:center;
+color:red;
+}
+img{
+   height:200px;
+width:200px;
+}
+.menu-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item h2 {
+            margin: 0;
+            color: #333;
+        }
+        .menu-item p {
+            margin: 0;
+            color: #666;
+        }
+        .price {
+            font-weight: bold;
+            color: #444;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- navigation bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <!-- <li><a href="working.html">Working</a></li> -->
+                <li><a href="foodorder.html">Food Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header><br>
+
+    <!-- Menu Section  -->
+    <section id="menu" style="padding: 0px; margin: 0px;">
+        <div class="menu-container">
+            <h1>Menu</h1>
+    <!-- pizza -->
+            <div class="menu-item">
+                <div>
+                    <h2>Pizza</h2>
+                    <marquee behaviour="alternate" direction="down"><img src="pizza.jpg" alt="Pizza">
+                    <img src="pizza1.jpg" alt="Pizza">
+                    <img src="pizza2.jpg" alt="Pizza">
+                    </marquee>
+                    <p>Delicious cheese and tomato pizza with fresh toppings</p>
+                </div>
+                <div class="price">Rs.399</div>
+            </div>
+<!-- noodles -->
+            <div class="menu-item">
+                <div>
+                    <h2>Noodles</h2>
+                    <marquee behaviour="alternate" direction="down"><img src="noodle.jpg" alt="Noodles">
+                    <img src="noodle1.jpg" alt="Noodles">
+                    <img src="Noodles.jpg" alt="Noodles"></marquee>
+
+                    <p>Delicious Juicy and meat flavoured noodles with toppings</p>
+                </div>
+                <div class="price">Rs.159</div>
+            </div>
+    <!-- sushi -->
+            <div class="menu-item">
+                <div>
+                    <h2>Sushi</h2>
+                    <marquee behaviour="alternate" direction="down"><img src="sushi.jpg" alt="Sushi">
+                    <img src="sushi1.jpg" alt="Sushi">
+                    <img src="sushi2.jpg" alt="Sushi">
+</marquee>
+                    <p>Fresh sushi rolls with a variety of fillings</p>
+                </div>
+                <div class="price">Rs.199</div>
+            </div>
+    <!-- french fries -->
+    <div class="menu-item">
+        <div>
+            <h2>French fries</h2>
+            <marquee behaviour="alternate" direction="down"><img src="fries.jpg" alt="fries">
+            <img src="fries1.jpg" alt="fries">
+            <img src="fries2.jpg" alt="fries">
+            <!-- <img src="burger4.jpg" alt="Burger"><br> -->
+</marquee>
+            <p>Juicy burger with crispy lettuce and tomatoes</p>
+        </div>
+        <div class="price">Rs.99</div>
+    </div>
+    <!-- burger -->
+            <div class="menu-item">
+                <div>
+                    <h2>Burger</h2>
+                    <marquee behaviour="alternate" direction="down"><img src="burger.jpg" alt="Burger">
+                    <img src="burger1.jpg" alt="Burger">
+                    <img src="burger2.jpg" alt="Burger">
+                    <!-- <img src="burger4.jpg" alt="Burger"><br> -->
+    </marquee>
+                    <p>Juicy burger with crispy lettuce and tomatoes</p>
+                </div>
+                <div class="price">Rs.99</div>
+            </div>
+    <!-- Lasagna -->
+            <div class="menu-item">
+                <div>
+                    <h2>Lasagne</h2>
+                    <marquee behaviour="alternate" direction="down"><img src="Lasagna.jpg" alt="Lasagna">
+                    <img src="lasagna1.jpg" alt="Lasagna">
+                    <img src="lasagna2.jpg" alt="Lasagna">
+                    <!-- <img src="lasagna3.jpg" alt="Lasagna"> -->
+    </marquee>                    
+                    <p>Layered pasta with rich meat sauce and cheese</p>
+                </div>
+                <div class="price">Rs.249</div>
+            </div>
+<!-- Sandwich -->
+            <div class="menu-item">
+                <div>
+                    <h2>Sandwich</h2>
+                    <marquee behaviour="alternate" direction="down"><img src="sand.jpg" alt="Sandwich">
+                    <img src="sand1.jpg" alt="Sandwich">
+                    <img src="sand2.jpg" alt="Sandwich">
+                    <!-- <img src="lasagna3.jpg" alt="Lasagna"> -->
+    </marquee>                    
+                    <p>Layered pasta with rich meat sauce and cheese</p>
+                </div>
+                <div class="price">Rs.49</div>
+            </div>
+<!-- Pasta -->
+<div class="menu-item">
+    <div>
+        <h2>Pasta</h2>
+        <marquee behaviour="alternate" direction="down"><img src="pasta.jpg" alt="Pasta">
+        <img src="pasta1.jpg" alt="Pasta">
+        <img src="pasta2.jpg" alt="Pasta">
+        <!-- <img src="lasagna3.jpg" alt="Lasagna"> -->
+</marquee>                    
+        <p>Juicy pasta with rich basil flavor influced sauce and cheese</p>
+    </div>
+    <div class="price">Rs.89</div>
+</div>
+
+        </div>
+    </div>
+</div>
+</section>
+
+</body>
+</html>

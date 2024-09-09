@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food delivery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-size: cover; /* Ensures the background covers the screen */
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 1.5s ease-in-out; /* Smooth transition */
+            overflow: hidden;
+        }
+/* header */
+header {
+    background:chocolate;
+    color: #fff;
+    padding: 1.6rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+/* navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content:flex-end; /* Centers the navbar items */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #fce38a;
+}
+h1 {
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            position: relative;
+            z-index: 1; /* Keeps the text visible over the background */
+            font-size: 50px;
+            bottom: 50px;
+        }
+        p{
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            position: relative;
+            z-index: 1; /* Keeps the text visible over the background */
+            font-size: 25px;   
+            text-align: center;
+            bottom:30px;
+        }
+        #aa {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background-color:darkorange;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Effects */
+        #aa:hover {
+            background-color:chocolate;
+            /* transform: translateY(-6px); */
+    transform: scale(1.1);
+       
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+<!-- navigation bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <!-- <li><a href="working.html">Working</a></li> -->
+                <li><a href="foodorder.html">Food Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header><br>
+<!-- home -->
+    <section id="home" style="padding: 0px; margin: 0px;">
+        <br><br><br>
+    <h1>Delicious Food Quick Delivery</h1>
+    <p>Order now & get your favorite meals on time!</p><br>
+            <center><a href="#menu" id="aa" class="btn">Browse Menu</a></center>
+
+
+
+    <!-- JavaScript to handle dynamic background -->
+    <script>
+        const images = [
+            'pizza.jpg','noodle.jpg','Sushi1.jpg','Lasagna.jpg'  // Image 3
+        ];
+
+        let currentImageIndex = 0;
+
+        function changeBackground() {
+            document.body.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+            currentImageIndex = (currentImageIndex + 1) % images.length; // Cycle through images
+        }
+
+        // Change background every 2 seconds (2000 milliseconds)
+        setInterval(changeBackground, 2000);
+
+        // Initial background on page load
+        window.onload = changeBackground;
+    </script>
+</section>
+
+</body>
+</html>
